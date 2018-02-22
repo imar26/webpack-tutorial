@@ -1,0 +1,17 @@
+{
+  "name": "webpack-tutorial",
+  "version": "1.0.0",
+  "description": "Package file for webpack tutorial",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "build": "webpack-dev-server --entry ./src/js/app.js --output-filename ./dist/bundle.js",
+    "build:prod": "webpack-dev-server src/js/app.js dist/bundle.js -p"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}
