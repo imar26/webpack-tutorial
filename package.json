@@ -5,12 +5,14 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "build": "webpack-dev-server --entry ./src/js/app.js --output-filename ./dist/bundle.js",
-    "build:prod": "webpack-dev-server src/js/app.js dist/bundle.js -p"
+    "build": "webpack-dev-server",
+    "build:prod": "webpack -p"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^0.28.10",
+    "style-loader": "^0.20.2",
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1"
   }
